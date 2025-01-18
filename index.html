@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Chris</title>
+    <link rel="favicon" href="./assets/download.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <i class="fa-solid fa-code"></i>
+    <button id="sidebar-toggle">☰</button>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#bio">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div id="sidebar">
+    <a href="#">Home</a>
+    <a href="#bio">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <section class="hero">
+    <div id="intro">Hello, I'm </div>
+    <div id="name">Samuel Chris Osahon</div>
+    <p>An experienced <a id="text"> Software Developer </a>with over 3 years of experience building and managing complex andd efficient server-side application</p>
+    <button id="work">View My Work</button>
+  </section>
+
+  <section class="bio" id="bio">
+    <h2>About Me</h2>
+    <p>I am a developer with a passion for creating intuitive and visually appealing user interfaces.
+      With a strong foundation in web technologies, I strive to deliver impactful solutions that blend
+      creativity with functionality. I specialize in crafting APIs, optimizing database and ensuring seamless
+      functionality for web applications. Thanks for visiting my portfoilio and feel free to explore my Projects
+    </p>
+
+    <a href="https://github.com/SamuelChris17" target="_blank" aria-label="github">
+      <i class="fa-brands fa-github-square fa-2x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/samuel-chris-742429281/" target="_blank" aria-label="linkedin">
+      <i class="fa-brands fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://x.com/sammychris091" target="_blank" aria-label="X">
+      <i class="fa-brands fa-x-twitter fa-2x"></i>
+    </a>
+
+
+    <p>For more info about my experience and qualification,</p>
+    <div><a href="https://docs.google.com/document/d/1YLXeMJWSM5J2e9duujsSQQuUPO_kkAkVO5v9xzEVIOs/edit?usp=sharing" target="_blank"><i class="fa-solid fa-sheet-plastic fa-6x"></i></a></div>
+
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>What I Bring To The Table</h2>
+    <p>
+      As a software engineer, I bring a strong combination of technical expertise and problem-solving skills to the table. 
+      With proficiency in modern programming languages like TypeScript and JavaScript, I specialize in building scalable applications, 
+      designing efficient APIs, and optimizing system performance. I thrive in collaborative environments, leveraging clear communication 
+      and teamwork to deliver high-quality solutions. My focus on clean, maintainable code ensures that the software I develop meets both 
+      current needs and future growth. Above all, I am passionate about creating user-centric solutions that solve real-world problems and 
+      drive meaningful impact.
+    </p>
+    <i class="fa-brands fa-html5 fa-6x"></i>
+    <i class="fa-brands fa-css3-alt fa-6x"></i>
+    <i class="fa-brands fa-js fa-6x"></i>
+    <i class="fa-solid fa-database fa-6x"></i>
+    <i class="fa-solid fa-server fa-6x"></i>
+    <i class="fa-solid fa-cloud fa-6x"></i>
+
+  </section>
+
+  <section class="projects" id="projects">
+    <h5>MY PROJECTS</h5>
+    <h2>What I Have Built</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="./assets/image.png" alt="Project Thumbnail">
+                <div class="details">
+                    <h3>A Stickman Game</h3>
+                    <p>This is an educational representation of how javascript can be used to create simple games. Using functions like cut and mathrandom, 
+                      it was easy to create. Although there are limitations to it, the use of mouse, it is a fun game to play. Click 
+                      <a href="https://samuelchris17.github.io/stickman-game/" target="_blank">here</a>
+                      to try it out
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./assets/passwordmanager.png" alt="Project Thumbnail">
+                <div class="details">
+                    <h3>Password Manager</h3>
+                    <p>This is an app feature that helps users generate a password from the provided username and stores it for future retrieval. Click
+                      <a href="https://password-manager-three-rose.vercel.app/" target="_blank">here</a> to try it out.
+                    </p>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>SEND ME A MESSAGE</h3>
+    <p>I'm currently looking for any new opportunities, my inbox is always open. 
+      Whether you have a question, want to collaborate on a project or just want
+      to say hi, I'll definitely get back to you.
+    </p>
+    <a href="mailto:sammychris091@gmail.com?subject=Hello%20Samuel&body=Hello%20Samuel,">Say Hello</a>
+  </section>
+</body>
+<footer>
+  <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+</footer>
+<script>   
+    const texts = [" Backend Engineer ", " Data Analyst ", " Game Dev Intern ", " Frontend Developer "];
+    let currentIndex = 0;
+    
+    function changeText() {  
+      const textElement = document.getElementById("text");
+ 
+      textElement.textContent = texts[currentIndex];
+  
+      currentIndex = (currentIndex + 1) % texts.length;
+    }
+
+    setInterval(changeText, 3000);
+
+            document.getElementById('work').addEventListener('click', () => {
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+        });
+    
+        document.getElementById('sidebar-toggle').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    const currentLeft = sidebar.style.left;
+    if (currentLeft === '0px' || currentLeft === '') {
+        sidebar.style.left = '-250px'; // Hide sidebar
+    } else {
+        sidebar.style.left = '0'; // Show sidebar
+    }
+});
+
+  </script>
+  <script src="https://kit.fontawesome.com/7e3020f543.js" crossorigin="anonymous"></script>
+</html>
