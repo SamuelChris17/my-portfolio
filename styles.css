@@ -7,7 +7,7 @@
 }
 
 body {
-    background: gray;
+    background: black;
     color: #333;
     font-size: 1.2rem;
     line-height: 1.6;
@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(45deg, #4c6ef5, #3c17e2);
+    background: skyblue;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -52,19 +52,19 @@ nav a:hover {
     left: -250px;
     width: 250px;
     height: 100%;
-    background: linear-gradient(45deg, #4c6ef5, #3c17e2);
+    background: skyblue;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
     transition: left 0.4s ease;
     z-index: 1000;
     padding-top: 50px;
-    color: gray;
+    color: white;
 }
 
 #sidebar a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: gray;
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 15px 0;
@@ -90,12 +90,11 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #3c17e2, #4c6ef5);
-    color: black;
+    background: black;
+    color: skyblue;
     text-align: center;
     padding: 50px 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
 }
 
 #intro {
@@ -108,7 +107,7 @@ nav a:hover {
     font-size: 3.5rem;
     font-weight: 900;
     margin: 10px 0;
-    color: gray;
+    color: skyblue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -119,7 +118,7 @@ nav a:hover {
 }
 
 button {
-    padding: 15px 25px;
+    padding: 20px 25px;
     background-color: #3c17e2;
     color: white;
     border: none;
@@ -127,6 +126,7 @@ button {
     font-size: 1.2rem;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    
 }
 
 button:hover {
@@ -139,10 +139,8 @@ button:hover {
     padding: 40px 20px;
     text-align: center;
     background-color: black;
-    color: white;
-    border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    color: skyblue;
+    
 }
 
 .bio p {
@@ -168,23 +166,22 @@ button:hover {
 
 /* Skills Section */
 .skills {
-    background: #f2f2f2;
+    background: black;
     padding: 40px 20px;
     text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    
 }
 
 .skills h2 {
     font-size: 2.5rem;
-    color: #4c6ef5;
+    color: skyblue;
 }
 
 .skills p {
     margin-top: 20px;
     font-size: 1.2rem;
     line-height: 1.6;
-    color: black;
+    color: skyblue;
 }
 
 .skills i {
@@ -202,34 +199,31 @@ button:hover {
 .projects {
     background-color: black;
     padding: 50px 20px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    
 }
 
 .projects h5 {
     font-size: 1.5rem;
-    color: #3c17e2;
+    color: skyblue;
     font-weight: bold;
 }
 
 .projects h2 {
-    font-size: 2.5rem;
-    color: #4c6ef5;
+    font-size: 2.0rem;
+    color: skyblue;
     margin-top: 10px;
 }
 
 .project-grid {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    display: block;
+    justify-content: flex-start;
+   
 }
 
 .project {
     background-color: black;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 45%;
+   
+    width: 100%;
     padding: 20px;
     transition: transform 0.2s ease-in-out;
 }
@@ -245,34 +239,34 @@ button:hover {
 }
 
 .project h3 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin: 15px 0;
-    color: #4c6ef5;
+    color: skyblue;
 }
 
 .project p {
-    font-size: 1rem;
-    color: white;
+    font-size: 0.8rem;
+    color: skyblue;
 }
 
 .project a {
-    color: #3c17e2;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
 .project a:hover {
-    color: #4c6ef5;
+    color: red;
 }
 
 /* Footer */
 footer {
-    background-color: #4c6ef5;
-    color: white;
+    background-color: black;
+    color: skyblue;
     padding: 20px;
+
     text-align: center;
-    border-radius: 12px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 footer p {
@@ -284,20 +278,19 @@ footer p {
     background-color: black;
     padding: 50px 20px;
     text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    
     margin-top: 30px;
 }
 
 .contact h3 {
-    font-size: 2.5rem;
-    color: #4c6ef5;
+    font-size: 2.0rem;
+    color: skyblue;
 }
 
 .contact p {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: white;
+    color: skyblue;
 }
 
 .contact a {
